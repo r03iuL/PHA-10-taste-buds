@@ -33,7 +33,7 @@ const router = createBrowserRouter([
           path:"/category/:id",
           element:<PriveteRoute><Categories></Categories></PriveteRoute>,
           // loader:({params}) => console.log(params.id)
-        loader:({params})=>fetch(`https://chefsteps-server-aditto002.vercel.app/categories/${params.id}`)
+        loader:({params})=>fetch(`https://server-r03iul.vercel.app/categories/${params.id}`)
         },
       ]
     },

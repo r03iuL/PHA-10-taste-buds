@@ -17,21 +17,21 @@ function Header() {
     .catch(error=>console.log(error))
   }
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="" variant="" className='p-4 bg-warning'>
     <Container>
-      <Navbar.Brand href="/">CHEFSTEPS</Navbar.Brand>
+      <Navbar.Brand href="/"> <h2>TasteBuds</h2></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/blog">Blog</Nav.Link>
+          <Nav.Link href="/"> <h3>Home</h3></Nav.Link>
+          <Nav.Link href="/blog"><h3>Blog</h3></Nav.Link>
         </Nav>
         <Nav>
           {user && <Nav.Link href=""><FaUserCircle style={{fontSixe :"2rem"}}></FaUserCircle><img className='rounded-circle'style={{height:'40px'}} src={user.photoURL} alt="" /></Nav.Link>}
         </Nav>
         <Nav>
           <Nav.Link href="">{
-            user ? <Link to='/login'><Button onClick={handelLogOut} variant="dark">LogOut</Button></Link>:<div> <Link to='/login'><Button variant="dark">Login</Button></Link><Link to='/register'><Button variant="dark">Register</Button></Link></div>
+            user ? <Link to='/login'><Button onClick={handelLogOut} variant="light">LogOut</Button></Link>:<div> <Link to='/login'><Button variant="warning">Login</Button></Link><Link to='/register'><Button className='ms-2' variant="warning">Register</Button></Link></div>
 }</Nav.Link>
           
         </Nav>

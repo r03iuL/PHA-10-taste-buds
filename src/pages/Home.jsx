@@ -9,11 +9,11 @@ function Home() {
   return (
     <div>
         <Banner></Banner>
-        <Gallery></Gallery>
+        <Services></Services>
         <Suspense fallback={<div>please wait ....</div>}>
         <ChefCards></ChefCards>
         </Suspense>
-        <Services></Services>
+        <Gallery></Gallery>
     </div>
   )
 }

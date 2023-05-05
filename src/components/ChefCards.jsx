@@ -18,7 +18,7 @@ function ChefCards() {
 
     const [categories, setCategories] =useState([]);
     useEffect(()=>{
-        fetch('https://chefsteps-server-aditto002.vercel.app/categories')
+        fetch('https://server-r03iul.vercel.app/categories')
         .then(res=>res.json())
         .then(data=>setCategories(data))
         .catch(error =>console.error(error))

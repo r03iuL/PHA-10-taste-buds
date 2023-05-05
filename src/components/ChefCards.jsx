@@ -28,7 +28,7 @@ function ChefCards() {
     {
       
       <Container>
-          <h1 className='mt-4 mx-auto mb-4'>Chinese Chef</h1>
+          <h1 className='mt-4 mx-auto mb-4'>American Chef</h1>
     <Row xs={1} md={2} className="g-4">
       {categories.map((categorie) => (
     <Col key={categorie.id}>
